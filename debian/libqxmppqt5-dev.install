@@ -1,0 +1,8 @@
+usr/include/QXmppQt5/
+usr/lib/*/cmake/QXmpp/
+usr/lib/*/cmake/QXmppOmemoQt5/
+usr/lib/*/cmake/QXmppQt5/
+usr/lib/*/libQXmppOmemoQt5.so
+usr/lib/*/libQXmppQt5.so
+usr/lib/*/pkgconfig/QXmppQt5.pc
+usr/lib/*/pkgconfig/qxmpp.pc

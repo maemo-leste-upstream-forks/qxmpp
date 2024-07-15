@@ -1,0 +1,91 @@
+Source: qxmpp
+Section: libs
+Priority: optional
+Maintainer: Debian XMPP Maintainers <pkg-xmpp-devel@lists.alioth.debian.org>
+Uploaders: Jeremy Lainé <jeremy.laine@m4x.org>, Boris Pek <tehnick@debian.org>
+Build-Depends: dpkg-dev, cmake,
+               debhelper-compat (= 13),
+               doxygen,
+               graphviz,
+               libgstreamer1.0-dev,
+               libomemo-c-dev,
+               libqca-qt5-2-dev,
+               pkg-config,
+               qtbase5-dev
+Standards-Version: 4.5.1
+Rules-Requires-Root: no
+Homepage: https://github.com/qxmpp-project/qxmpp
+Vcs-Git: https://salsa.debian.org/xmpp-team/qxmpp.git
+Vcs-Browser: https://salsa.debian.org/xmpp-team/qxmpp
+
+Package: libqxmppqt5-4t64
+Provides: ${t64:Provides}
+Architecture: any
+Replaces: libqxmppqt5-4, libqxmpp0, libqxmpp1, libqxmpp2
+Breaks: libqxmppqt5-4 (<< ${source:Version}), libqxmpp0, libqxmpp1, libqxmpp2
+Depends: gstreamer1.0-plugins-base,
+         gstreamer1.0-plugins-good,
+         gstreamer1.0-plugins-ugly,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Multi-Arch: same
+Description: QXmpp library for XMPP client and server applications
+ QXmpp is a cross-platform C++ XMPP library built upon Qt. It strives to be
+ as easy to use as possible.
+ .
+ This package contains the shared library.
+
+Package: libqxmppomemoqt5-4t64
+Provides: ${t64:Provides}
+Replaces: libqxmppomemoqt5-4
+Breaks: libqxmppomemoqt5-4 (<< ${source:Version})
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Multi-Arch: same
+Description: QXmppOmemo library for XMPP client and server applications
+ QXmpp is a cross-platform C++ XMPP library built upon Qt. It strives to be
+ as easy to use as possible.
+ .
+ This package contains the OMEMO shared library.
+
+Package: libqxmppqt5-dev
+Section: libdevel
+Architecture: any
+Depends: libgstreamer1.0-dev,
+         libqxmppomemoqt5-4t64 (= ${binary:Version}),
+         libqxmppqt5-4t64 (= ${binary:Version}),
+         qtbase5-dev,
+         ${misc:Depends}
+Breaks: libqxmpp-dev (<< 1.5.5-0.1~exp1~),
+Replaces: libqxmpp-dev (<< 1.5.5-0.1~exp1~),
+Suggests: libqxmpp-doc
+Multi-Arch: same
+Description: Development files for the QXmpp library
+ QXmpp is a cross-platform C++ XMPP library built upon Qt. It strives to be
+ as easy to use as possible.
+ .
+ This package contains the development headers and libraries.
+
+Package: libqxmpp-doc
+Section: doc
+Architecture: all
+Depends: lynx | www-browser, ${misc:Depends}
+Suggests: libqxmppqt5-dev
+Description: Documentation for the QXmpp library
+ QXmpp is a cross-platform C++ XMPP library built upon Qt. It strives to be
+ as easy to use as possible.
+ .
+ This package contains the HTML documentation.
+
+Package: libqxmpp-dev
+Section: oldlibs
+Architecture: any
+Depends: libqxmppqt5-dev (>= ${binary:Version}),
+         ${misc:Depends}
+Multi-Arch: same
+Description: transitional package for libqxmppqt5-dev
+ This package is a transitional dummy package used to switch to
+ libqxmppqt5-dev.
+ .
+ It can be safely removed after the upgrade.

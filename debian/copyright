@@ -1,0 +1,117 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Debianized-By: Jeremy Lainé <jeremy.laine@m4x.org>
+Debianized-Date: Wed, 11 Aug 2010 10:55:24 +0200
+Upstream-Name: QXmpp
+Upstream-Contact: Linus Jahn <lnj@kaidan.im>
+Source: https://github.com/qxmpp-project/qxmpp/tags
+ The orig.tar.gz is just renamed upstream tarball (without changes).
+
+Files: *
+Copyright: 2008-2021 The QXmpp developers (https://github.com/qxmpp-project/qxmpp)
+Comment: Upstream Authors:
+         2008-2014 Manjeet Dahiya <manjeetdahiya@gmail.com>
+         2008-2019 Jeremy Lainé <jeremy.laine@m4x.org>
+         2008-2012 Ian Reinhart Geiser <geiseri@kde.org>
+         2011-2014 Georg Rudoy <0xd34df00d@gmail.com>
+         2017-2018 Niels Ole Salscheider <niels_ole@salscheider-online.de>
+         2018-2023 Linus Jahn <lnj@kaidan.im>
+         2020 Oliver Goffart <ogoffart@woboq.com>
+         2022 Jonah Brüchert <jbb@kaidan.im>
+         2022 Cochise César <cochisecesar@zoho.com>
+         2020-2021 Germán Márquez Mejía <mancho@olomono.de>
+         2019-2023 Melvin Keskin <melvo@olomono.de>
+         2019 Yury Gubich <blue@macaw.me>
+License: LGPL-2.1-or-later
+
+Files:
+ CMakeLists.txt
+ QXmppConfig.cmake.in
+ README.md
+ SECURITY.md
+ cmake/QXmppQtAutoConfig.cmake.in
+ cmake/QXmppQtAutoConfigVersion.cmake
+ doc/CMakeLists.txt
+ doc/Doxyfile.in
+ doc/doap-rendering/*
+ doc/doap.xml
+ doc/index.doc
+ doc/using.doc
+ doc/xep.doc
+ examples/example_5_rpcInterface/xmlrpctest.txt
+ qxmpp.pc.in
+ qxmpp_legacy.pc.in
+ src/omemo/CMakeLists.txt
+ src/CMakeLists.txt
+ tests/qxmpphttpuploadmanager/CMakeLists.txt
+ tests/qxmpphttpuploadmanager/test.svg
+ tests/qxmpphttpuploadmanager/tst_qxmpphttpuploadmanager.qrc
+ tests/qxmpptransfermanager/CMakeLists.txt
+ tests/qxmpptransfermanager/test.svg
+ tests/qxmpputils/test.*
+Copyright:
+ 2010, 2014 Jeremy Lainé <jeremy.laine@m4x.org>
+ 2017 Niels Ole Salscheider <niels_ole@salscheider-online.de>
+ 2009 Manjeet Dahiya <manjeetdahiya@gmail.com>
+ 2022-2023 Linus Jahn <lnj@kaidan.im>
+ 2019-2023 Melvin Keskin <melvo@olomono.de>
+ 2019 Adrien Destugues <pulkomandy@pulkomandy.tk>
+ 2004 XMPP Standards Foundation
+ 2009 Ian Geiser <ian.geiser@gmail.com>
+ 2019 Yury Gubich <blue@macaw.me>
+License: CC0-1.0
+
+Files: cmake/modules/*
+Copyright: 2008 Laurent Montel <montel@kde.org>
+           2006 Tim Beaulen <tbscope@gmail.com>
+           2008 Helio Chissini de Castro <helio@kde.org>
+           2010 Collabora Ltd.
+License: BSD-3-clause
+
+Files: debian/*
+Copyright: 2010-2018 Jeremy Lainé <jeremy.laine@m4x.org>
+           2012-2021 Boris Pek <tehnick-8@yandex.ru>
+License: LGPL-2.1-or-later
+
+License: BSD-3-clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ .
+ 1. Redistributions of source code must retain the copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ 3. The name of the author may not be used to endorse or promote products
+    derived from this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+ IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+ NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+License: LGPL-2.1-or-later
+ This program is free software: you can redistribute it and/or modify it under
+ the terms of the GNU Lesser General Public License as published by the Free
+ Software Foundation, either version 2.1 of the License, or (at your option)
+ any later version.
+ .
+ This program is distributed in the hope that it will be useful, but WITHOUT ANY
+ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+ PARTICULAR PURPOSE. See the GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License along with
+ this program. If not, see <https://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public License
+ can be found in `/usr/share/common-licenses/LGPL-2.1'.
+
+License: CC0-1.0
+ On Debian systems, the complete text of the Creative Commons Zero v1.0
+ Universal License can be found in "/usr/share/common-licenses/CC0-1.0".
